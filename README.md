@@ -1,52 +1,52 @@
-# HTML Presentation · 视频友好版
+# HTML Presentation · Versión para vídeo
 
-<p align="center"><strong>把逐字稿或导演稿，整理成可交给 AI 生成的 HTML 演示提示词</strong></p>
+<p align="center"><strong>Convierte guiones literales o guiones de dirección en prompts listos para que una IA genere presentaciones HTML</strong></p>
 
 <p align="center">
-  <a href="https://juanjuanjie.github.io/html-presentation/">在线使用</a> ·
-  <a href="https://www.bilibili.com/video/BV1HToiBCEwg">项目教程</a> ·
-  <a href="https://www.bilibili.com/video/BV1g5j46iE5C">为什么用 HTML 替代 PPT</a>
+  <a href="https://juanjuanjie.github.io/html-presentation/">Usar en línea</a> ·
+  <a href="https://www.bilibili.com/video/BV1HToiBCEwg">Tutorial del proyecto</a> ·
+  <a href="https://www.bilibili.com/video/BV1g5j46iE5C">Por qué usar HTML en lugar de PPT</a>
 </p>
 
-HTML Presentation 是一个静态、隐私友好的 HTML 演示与视频分镜工具。你可以在首页导入稿件、选择生成模式和视觉模板，获得一份包含稿件、模板源码与生成规则的完整提示词，再交给常用的 AI Agent 生成最终 HTML。
+HTML Presentation es una herramienta estática y respetuosa con la privacidad para crear presentaciones HTML y storyboards de vídeo. En la página de inicio puedes importar un guion, elegir el modo de generación y una plantilla visual, y obtener un prompt completo con el guion, el código fuente de la plantilla y las reglas de generación, para dárselo después a tu agente de IA habitual y que genere el HTML final.
 
-- **演讲 HTML**：从逐字稿提炼观点，按内容组织页面，适合课程、分享和手动演示。
-- **导演 HTML**：严格按照导演稿一镜一页生成，保留逐镜口播、画面与动效要求。
-- **本地读取**：稿件只在当前浏览器页面中处理，不上传、不持久保存。
-- **视频友好**：模板采用 16:9 画布，可批量导出 1920×1080 PNG 分镜。
+- **HTML de charla**: extrae las ideas del guion literal y organiza las páginas según el contenido; ideal para clases, charlas y presentaciones manuales.
+- **HTML de dirección**: genera estrictamente una página por plano según el guion de dirección, conservando la locución, la imagen y los requisitos de animación de cada plano.
+- **Lectura local**: el guion se procesa solo en la página actual del navegador; no se sube ni se guarda de forma persistente.
+- **Pensado para vídeo**: las plantillas usan un lienzo 16:9 y permiten exportar storyboards PNG de 1920×1080 por lotes.
 
-## 在线页面
+## Páginas en línea
 
-项目根目录的 [`index.html`](./index.html) 是 GitHub Pages 入口，包含四个页面：
+El archivo [`index.html`](./index.html) de la raíz es la entrada de GitHub Pages e incluye cuatro páginas:
 
-- **首页**：选择演讲 HTML 或导演 HTML，导入稿件并准备完整 Agent 提示词。
-- **模板**：浏览 3 套模板与配色，展开编辑面板实时微调颜色和字体。
-- **动效**：查看适合导演稿的可复用动效组件。
-- **README**：直接在站内阅读本说明。
+- **Inicio**: elige HTML de charla o de dirección, importa el guion y prepara el prompt completo para el agente.
+- **Plantillas**: explora 3 plantillas con sus paletas y despliega el panel de edición para ajustar colores y tipografías en tiempo real.
+- **Animaciones**: consulta componentes de animación reutilizables adecuados para guiones de dirección.
+- **README**: lee esta documentación directamente en el sitio.
 
-本站不接入模型密钥，也不会自动调用 AI。生成提示词后，请复制到你使用的 AI Agent，并逐页检查内容、溢出与可读性。
+Este sitio no usa claves de modelos ni llama automáticamente a ninguna IA. Tras generar el prompt, cópialo en el agente de IA que uses y revisa página por página el contenido, los desbordamientos y la legibilidad.
 
-## 当前模板
+## Plantillas actuales
 
-| 模板 | 页面 | 视觉特点 | 配色 |
+| Plantilla | Páginas | Características visuales | Paleta |
 |---|---:|---|---|
-| **Doodle Cream** | 15 | 白纸暖黄、圆形卷卷姐头像、不规则流程、系列转变页 | 白纸暖黄 |
-| **BlockFrame** | 13 | 粗黑边框、糖果色块、新粗野主义 | 糖果亮色、复古纸感、暗黑糖果 |
-| **Professional** | 15 | 克制留白、科技感排版、报告型信息结构 | 奶油钴蓝、紫金暗色、黑绿专业 |
+| **Doodle Cream** | 15 | Papel blanco y amarillo cálido, avatar circular de Juanjuanjie, flujos irregulares, páginas de transición de serie | Papel blanco y amarillo cálido |
+| **BlockFrame** | 13 | Bordes negros gruesos, bloques de color caramelo, neobrutalismo | Caramelo claro, papel retro, caramelo oscuro |
+| **Professional** | 15 | Espacios en blanco sobrios, tipografía tecnológica, estructura de informe | Crema y azul cobalto, púrpura y oro oscuro, negro y verde profesional |
 
-模板卡片、编辑面板和生成器共享同一套模板数据。编辑配色只通过 URL 参数覆盖 CSS 变量，不会修改模板源文件。
+Las tarjetas de plantilla, el panel de edición y el generador comparten los mismos datos de plantilla. La edición de colores solo sobrescribe variables CSS mediante parámetros de URL y no modifica los archivos fuente de las plantillas.
 
-## 效果预览
+## Vista previa
 
-以下图片均直接从当前模板 HTML 截取，统一为 1920×1080。每套模板展示 3 个代表页面，避免封面图尺寸不一致。
+Todas las imágenes se capturan directamente del HTML de las plantillas actuales y están unificadas a 1920×1080. Cada plantilla muestra 3 páginas representativas para evitar portadas de distintos tamaños.
 
 ### Doodle Cream
 
 <table>
   <tr>
-    <td width="33.33%"><img src="assets/readme-previews/doodle-cream-01.png" alt="Doodle Cream 封面" width="100%"></td>
-    <td width="33.33%"><img src="assets/readme-previews/doodle-cream-02.png" alt="Doodle Cream 平台介绍页" width="100%"></td>
-    <td width="33.33%"><img src="assets/readme-previews/doodle-cream-03.png" alt="Doodle Cream 流程页" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/doodle-cream-01.png" alt="Portada de Doodle Cream" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/doodle-cream-02.png" alt="Página de presentación de la plataforma de Doodle Cream" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/doodle-cream-03.png" alt="Página de flujo de Doodle Cream" width="100%"></td>
   </tr>
 </table>
 
@@ -54,9 +54,9 @@ HTML Presentation 是一个静态、隐私友好的 HTML 演示与视频分镜�
 
 <table>
   <tr>
-    <td width="33.33%"><img src="assets/readme-previews/blockframe-01.png" alt="BlockFrame 封面" width="100%"></td>
-    <td width="33.33%"><img src="assets/readme-previews/blockframe-02.png" alt="BlockFrame 特性页" width="100%"></td>
-    <td width="33.33%"><img src="assets/readme-previews/blockframe-03.png" alt="BlockFrame 时间线页" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/blockframe-01.png" alt="Portada de BlockFrame" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/blockframe-02.png" alt="Página de características de BlockFrame" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/blockframe-03.png" alt="Página de línea de tiempo de BlockFrame" width="100%"></td>
   </tr>
 </table>
 
@@ -64,117 +64,120 @@ HTML Presentation 是一个静态、隐私友好的 HTML 演示与视频分镜�
 
 <table>
   <tr>
-    <td width="33.33%"><img src="assets/readme-previews/professional-01.png" alt="Professional 封面" width="100%"></td>
-    <td width="33.33%"><img src="assets/readme-previews/professional-02.png" alt="Professional 分析页" width="100%"></td>
-    <td width="33.33%"><img src="assets/readme-previews/professional-03.png" alt="Professional 流程页" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/professional-01.png" alt="Portada de Professional" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/professional-02.png" alt="Página de análisis de Professional" width="100%"></td>
+    <td width="33.33%"><img src="assets/readme-previews/professional-03.png" alt="Página de flujo de Professional" width="100%"></td>
   </tr>
 </table>
 
-## 快速开始
+## Inicio rápido
 
-### 1. 在线使用
+### 1. Uso en línea
 
-打开 [GitHub Pages](https://juanjuanjie.github.io/html-presentation/)，选择模式、模板和稿件，然后复制完整提示词到 AI Agent。
+Abre [GitHub Pages](https://juanjuanjie.github.io/html-presentation/), elige el modo, la plantilla y el guion, y copia el prompt completo en tu agente de IA.
 
-### 2. 本地预览
+### 2. Vista previa local
 
-请通过本地 HTTP 服务打开项目，不建议直接双击 `index.html`，因为浏览器可能阻止模板文件读取。
+Abre el proyecto a través de un servidor HTTP local. No se recomienda hacer doble clic en `index.html`, porque el navegador puede bloquear la lectura de los archivos de plantilla.
 
 ```bash
 python -m http.server 9966
 ```
 
-浏览器访问 `http://127.0.0.1:9966/`。
+Accede desde el navegador a `http://127.0.0.1:9966/`.
 
-### 3. 直接制作模板
+### 3. Crear directamente a partir de una plantilla
 
-复制任意模板作为起点：
+Copia cualquier plantilla como punto de partida:
 
 ```bash
 cp themes/doodle-cream/template.html my-presentation.html
 ```
 
-每个页面使用 `.slide` 元素，当前页使用 `.active` class。模板为单文件 HTML，便于复制、版本控制和交给 AI 修改。
+Cada página usa un elemento `.slide` y la página actual lleva la clase `.active`. Las plantillas son HTML de un solo archivo, fáciles de copiar, versionar y pasar a una IA para modificarlas.
 
-## 导演稿最小格式
+## Formato mínimo del guion de dirección
 
-导演 HTML 会检查从“镜 01”开始的连续编号，不自动补镜、合并镜头或添加额外封面。每个镜头建议包含布局、画面、花字、图示、动效、转场与口播。
+El HTML de dirección comprueba la numeración consecutiva a partir de «镜 01» (Plano 01) y no añade planos automáticamente, no fusiona planos ni agrega portadas adicionales. Se recomienda que cada plano incluya composición, imagen, texto destacado, esquema, animación, transición y locución.
+
+> **Nota:** los nombres de los campos del formato (`镜`, `布局`, `画面`, `花字`, `图示`, `动效`, `转场`, `口播`) son los que reconoce el validador del proyecto original, por lo que se conservan en chino y se acompañan de su traducción.
 
 ```md
-## 镜 01｜开场提问
+## 镜 01｜开场提问          (Plano 01 | Pregunta inicial)
 
-- 布局：居中大字，画面留白
-- 画面：问题从模糊逐渐变清晰
-- 花字：学编程还值得吗？
-- 图示：抽象代码符号与一个问号
-- 动效：花字淡入，问号轻微放大
-- 转场：问题向左退出，衔接下一镜
+- 布局：居中大字，画面留白        (Composición: texto grande centrado, con espacio en blanco)
+- 画面：问题从模糊逐渐变清晰      (Imagen: la pregunta pasa de borrosa a nítida)
+- 花字：学编程还值得吗？          (Texto destacado: ¿Todavía vale la pena aprender a programar?)
+- 图示：抽象代码符号与一个问号    (Esquema: símbolos de código abstractos y un signo de interrogación)
+- 动效：花字淡入，问号轻微放大    (Animación: el texto aparece con fundido, el signo se agranda ligeramente)
+- 转场：问题向左退出，衔接下一镜  (Transición: la pregunta sale por la izquierda y enlaza con el siguiente plano)
 - 口播：如果 AI 一秒钟就能写出你练三个月的代码，那你辛苦学的编程，还值钱吗？
+  (Locución: Si una IA puede escribir en un segundo el código que tú tardaste tres meses en practicar, ¿sigue valiendo la pena todo lo que te costó aprender a programar?)
 ```
 
-详细规则见 [`docs/generation-modes.md`](./docs/generation-modes.md)。
+Las reglas detalladas están en [`docs/generation-modes.md`](./docs/generation-modes.md).
 
-## 导出 PNG 分镜
+## Exportar storyboards PNG
 
-安装依赖与 Chromium：
+Instala las dependencias y Chromium:
 
 ```bash
 pip install -r requirements.txt
 playwright install chromium
 ```
 
-导出模板全部页面：
+Exporta todas las páginas de una plantilla:
 
 ```bash
 python scripts/screenshot_html_slides.py themes/doodle-cream/template.html -o slides_out
 ```
 
-输出文件为 `slides_out/page_01.png`、`page_02.png`……，默认画幅为 1920×1080。完整参数见 [`scripts/README.md`](./scripts/README.md)。
+Los archivos de salida son `slides_out/page_01.png`, `page_02.png`…, con formato predeterminado de 1920×1080. Consulta todos los parámetros en [`scripts/README.md`](./scripts/README.md).
 
-## 项目结构
+## Estructura del proyecto
 
 ```text
 html-presentation/
-├── index.html                       # GitHub Pages 入口与模板数据
-├── README.md                        # 项目说明
-├── SKILL.md                         # 视频友好设计规范
-├── NOTICE.md                        # 致谢与来源声明
+├── index.html                       # Entrada de GitHub Pages y datos de plantillas
+├── README.md                        # Descripción del proyecto
+├── SKILL.md                         # Guía de diseño para vídeo
+├── NOTICE.md                        # Agradecimientos y declaración de origen
 ├── assets/
-│   ├── generator.css                # 生成器与模板编辑面板样式
-│   ├── generator.js                 # 双模式校验与提示词组装
-│   ├── navigation.js                # 首页 / 模板 / 动效 / README 路由
-│   ├── previews/                    # 模板卡片预览图
-│   └── readme-previews/             # README 的 3×3 统一预览图
+│   ├── generator.css                # Estilos del generador y del panel de edición de plantillas
+│   ├── generator.js                 # Validación de los dos modos y composición del prompt
+│   ├── navigation.js                # Rutas: inicio / plantillas / animaciones / README
+│   ├── previews/                    # Imágenes de vista previa de las tarjetas de plantilla
+│   └── readme-previews/             # Vistas previas unificadas 3×3 del README
 ├── scripts/
-│   ├── screenshot_html_slides.py    # 批量导出幻灯片 PNG
-│   ├── generate_variant_previews.py # 更新配色变体预览
-│   └── test_generator.py            # 页面与生成器冒烟测试
+│   ├── screenshot_html_slides.py    # Exportación por lotes de diapositivas a PNG
+│   ├── generate_variant_previews.py # Actualiza las vistas previas de las variantes de color
+│   └── test_generator.py            # Pruebas básicas de la página y del generador
 ├── themes/
 │   ├── doodle-cream/
 │   ├── blockframe/
-│   ├── blockframe-dark/             # BlockFrame 暗色变体
-│   └── purple-gold-presentation/    # Professional 模板与配色变体
-└── .github/workflows/pages.yml      # GitHub Pages 自动部署
+│   ├── blockframe-dark/             # Variante oscura de BlockFrame
+│   └── purple-gold-presentation/    # Plantilla Professional y sus variantes de color
+└── .github/workflows/pages.yml      # Despliegue automático en GitHub Pages
 ```
 
-## 设计原则
+## Principios de diseño
 
-1. **单页单点**：每页只承担一个明确任务，标题尽量直接表达结论。
-2. **字号够大**：保证录屏、视频压缩和移动端观看时仍然清楚。
-3. **留白充足**：避免信息贴边，也为字幕、头像和平台控件预留空间。
-4. **结构优先**：先完成故事规划和页面蓝图，再把内容放入模板。
-5. **逐页自检**：发布前检查逻辑、溢出、对比度和翻页节奏。
+1. **Una página, una idea**: cada página cumple una única tarea clara y el título expresa la conclusión de forma directa.
+2. **Tipografía suficientemente grande**: debe seguir siendo legible al grabar la pantalla, tras la compresión del vídeo y en móviles.
+3. **Espacio en blanco generoso**: evita que la información toque los bordes y reserva espacio para subtítulos, avatares y controles de la plataforma.
+4. **Primero la estructura**: completa antes la planificación de la historia y el esquema de páginas, y después coloca el contenido en la plantilla.
+5. **Autorrevisión página a página**: antes de publicar, comprueba la lógica, los desbordamientos, el contraste y el ritmo de cambio de página.
 
-## 部署
+## Despliegue
 
-仓库已配置 GitHub Actions（`.github/workflows/pages.yml`）。在仓库 **Settings → Pages** 中选择 **GitHub Actions** 作为部署来源，推送到 `main` 后会自动更新 GitHub Pages。
+El repositorio ya tiene configurado GitHub Actions (`.github/workflows/pages.yml`). En **Settings → Pages** del repositorio, elige **GitHub Actions** como origen del despliegue; al hacer push a `main` se actualizará GitHub Pages automáticamente.
 
-## 作者与致谢
+## Autoría y agradecimientos
 
-由 [卷卷姐 juan](https://space.bilibili.com/229150291) 制作并维护。
+Creado y mantenido por [Juanjuanjie (卷卷姐 juan)](https://space.bilibili.com/229150291).
 
-项目基于 [Zara Zhang](https://github.com/zarazhangrui) 的 [frontend-slides](https://github.com/zarazhangrui/frontend-slides) 与 [beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) 改编。详细声明见 [`NOTICE.md`](./NOTICE.md)。
+El proyecto está adaptado a partir de [frontend-slides](https://github.com/zarazhangrui/frontend-slides) y [beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) de [Zara Zhang](https://github.com/zarazhangrui). Consulta la declaración detallada en [`NOTICE.md`](./NOTICE.md).
 
-## License
+## Licencia
 
 [MIT](./LICENSE)

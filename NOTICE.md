@@ -1,31 +1,31 @@
-# 致谢与来源声明
+# Agradecimientos y declaración de origen
 
-本项目 (`html-presentation-video`) 是在 Zara Zhang 开源项目的基础上进行改编、整合和二次开发的衍生作品。
+Este proyecto (`html-presentation-video`) es una obra derivada, adaptada, integrada y desarrollada a partir de los proyectos de código abierto de Zara Zhang.
 
-## 原作者与原始项目
+## Autora original y proyectos de origen
 
 - **Zara Zhang**
-  - [frontend-slides](https://github.com/zarazhangrui/frontend-slides) — Claude Code 插件/Skill，提供 Slide Engine、动画模式与模板选择框架。
-  - [beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) — 可复用的 HTML 幻灯片模板库。
+  - [frontend-slides](https://github.com/zarazhangrui/frontend-slides) — Plugin/Skill de Claude Code que aporta el Slide Engine, los patrones de animación y el marco de selección de plantillas.
+  - [beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) — Biblioteca reutilizable de plantillas de diapositivas HTML.
 
-## 本项目的修改
+## Modificaciones de este proyecto
 
-在原始项目的基础上，本项目进行了以下主要修改：
+Sobre la base de los proyectos originales, este proyecto realiza las siguientes modificaciones principales:
 
-- 对基础模板进行**视频友好化改造**：放大字号、降低信息密度、增加左右留白、提升对比度、删除噪点纹理。
-- 精简主题库，保留最适用于视频演示的 `blockframe`、`blue-professional` 和 `purple-gold-presentation`。
-- 删除冗余文件（`.git/`、`__pycache__/`、生成日志、截图缓存、具体项目输出等）。
-- 改进截图脚本，自动隐藏更多模板自带控件。
-- 重写 README、SKIL.md 等文档，突出视频演示场景。
+- **Adaptación de las plantillas base para vídeo**: tipografía más grande, menor densidad de información, más margen lateral, mayor contraste y eliminación de la textura de ruido.
+- Reducción de la biblioteca de temas, conservando los más adecuados para presentaciones en vídeo: `blockframe`, `blue-professional` y `purple-gold-presentation`.
+- Eliminación de archivos redundantes (`.git/`, `__pycache__/`, registros de generación, caché de capturas, resultados de proyectos concretos, etc.).
+- Mejora del script de capturas para ocultar automáticamente más controles incluidos en las plantillas.
+- Reescritura de README, SKILL.md y otros documentos para destacar el uso en presentaciones de vídeo.
 
-## 许可证
+## Licencia
 
-原始项目采用 MIT License 发布，本衍生作品同样采用 MIT License。
+El proyecto original se publica bajo la licencia MIT y esta obra derivada también usa la licencia MIT.
 
-原始 MIT License 文本（摘要）：
+Texto original de la licencia MIT (extracto, se mantiene en inglés):
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 >
 > The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-完整许可证文本见项目根目录 `LICENSE` 文件（如存在）或原始仓库。
+El texto completo de la licencia está en el archivo `LICENSE` de la raíz del proyecto (si existe) o en el repositorio original.

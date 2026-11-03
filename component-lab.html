@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UI素材库</title><link rel="stylesheet" href="assets/component-lab.css">
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Biblioteca de elementos de UI</title><link rel="stylesheet" href="assets/component-lab.css">
 <style>
 /* Match the template gallery's Doodle search and segmented controls. */
 dialog::backdrop{background:transparent}
@@ -17,17 +17,17 @@ input.library-search:focus{border-color:#24231f;box-shadow:0 0 0 4px rgba(255,22
 </style>
 <script>if(new URLSearchParams(location.search).has('embedded'))document.documentElement.classList.add('embedded');</script></head>
 <body><style>.preview.motion-preview{display:block}.preview.motion-preview iframe{display:block;width:100%;height:100%;transform:none}#detail-preview .motion-preview{height:240px}</style><main>
-<a class="back" href="index.html">← 返回首页</a>
-<header><div class="heading"><h1>UI素材库</h1><p>小元素，随取随用。</p></div></header>
+<a class="back" href="index.html">← Volver al inicio</a>
+<header><div class="heading"><h1>Biblioteca de elementos de UI</h1><p>Pequeños elementos, listos para usar.</p></div></header>
 <div class="toolbar library-toolbar">
-<input id="search" class="library-search" type="search" aria-label="搜索素材" placeholder="搜索素材、图形、Logo…">
-<div id="filters" class="filters" role="group" aria-label="素材分类"></div>
-<label class="transparent"><input id="transparent" type="checkbox">透明网格</label>
+<input id="search" class="library-search" type="search" aria-label="Buscar elementos" placeholder="Buscar elementos, gráficos, logotipos…">
+<div id="filters" class="filters" role="group" aria-label="Categorías de elementos"></div>
+<label class="transparent"><input id="transparent" type="checkbox">Cuadrícula de transparencia</label>
 </div>
-<div class="grid" id="elements"></div><p id="empty" hidden>没有匹配的素材，试试其他关键词或分类。</p>
+<div class="grid" id="elements"></div><p id="empty" hidden>No hay elementos que coincidan; prueba con otras palabras clave o categorías.</p>
 </main>
-<dialog id="detail" aria-labelledby="detail-title"><div class="dialog-head"><h2 id="detail-title"></h2><button data-close aria-label="关闭详情">×</button></div><div id="detail-preview"></div><p id="detail-origin"></p><p id="detail-class"></p><div class="actions"><button id="detail-copy" class="accent">复制代码</button><button id="detail-prompt">复制提示词</button></div><label for="detail-code">元素代码</label><textarea id="detail-code" readonly spellcheck="false"></textarea></dialog>
-<dialog id="manual" aria-labelledby="manual-title"><div class="dialog-head"><h2 id="manual-title">手动复制</h2><button data-close aria-label="关闭">×</button></div><p>浏览器未允许自动复制，请按 Ctrl+C 复制以下内容。</p><textarea id="manual-text" readonly></textarea></dialog>
+<dialog id="detail" aria-labelledby="detail-title"><div class="dialog-head"><h2 id="detail-title"></h2><button data-close aria-label="Cerrar detalle">×</button></div><div id="detail-preview"></div><p id="detail-origin"></p><p id="detail-class"></p><div class="actions"><button id="detail-copy" class="accent">Copiar código</button><button id="detail-prompt">Copiar prompt</button></div><label for="detail-code">Código del elemento</label><textarea id="detail-code" readonly spellcheck="false"></textarea></dialog>
+<dialog id="manual" aria-labelledby="manual-title"><div class="dialog-head"><h2 id="manual-title">Copia manual</h2><button data-close aria-label="Cerrar">×</button></div><p>El navegador no permitió la copia automática; pulsa Ctrl+C para copiar el siguiente contenido.</p><textarea id="manual-text" readonly></textarea></dialog>
 <div id="status" class="toast" role="status" hidden></div>
 <script src="assets/logo-library.js"></script><script src="assets/motion-library.js"></script><script src="assets/component-lab.js"></script>
 <script>if(window.parent!==window&&document.documentElement.classList.contains('embedded'))new ResizeObserver(()=>parent.postMessage({type:'ui-elements-height',height:document.querySelector('main').offsetHeight+24},location.origin==='null'?'*':location.origin)).observe(document.querySelector('main'));</script>
